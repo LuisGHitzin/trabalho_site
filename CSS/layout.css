@@ -1,4 +1,75 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:100%;
+    margin: 0 auto;
+    /*background-image:url(../img/fundo.jpg);*/
+    background-image:linear-gradient(to right, #f1f3f7, #a3a3a3);
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+    overflow-x: hidden;
+}
 header{
-    background-color: rgb(104, 114, 126);
-    color: rgb(156, 199, 28);
+    background-color: #017143;
+    color: rgb(20, 3, 3);
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid;
+}
+.logo img{
+    width: 5%;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+.nav{
+    overflow: hidden;
+    border-radius: 5px;
+}
+.nav a{
+    color: rgb(0, 0, 0);
+    float: right;
+    text-decoration:none;
+    padding:10px;
+    border-radius: 5px;
+}
+.nav a:hover{
+    color:rgb(255, 255, 255);
+    background-color:rgba(0, 0, 0, 0.171);
+    border-radius: 5px;
+}
+.circulo{
+    border-radius: 50% 0% 0% 50%;
+    position: absolute;
+    bottom: -450px;
+    right: -300px;
+    top: 250px;
+    width: 1200px;
+    height: 1200px;
+    background-color: #017143;
+}
+.circulo h1{
+    padding-left: 20%;
+    top: 300px;
+    font-size:200px;
+}
+.irati{
+    color: #f8f8f8;
+    text-shadow: 5px  5px  0px black;
+}
+
+
+
+.rodape{
+    /*background-color: #017143;*/
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkgray;
+    font-size:10px;
+    text-align:center;
+}
+@media screen and (max-width:600px){
+    .principal, .conteudo{
+        width:100%;
+        flex-direction: column;
+        padding:0px;
+    }
 }
